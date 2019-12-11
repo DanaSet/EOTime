@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    tools:context=".MainActivity">
+    tools:context=".RegisterActivity">
 
     <TextView
         android:id="@+id/tvEmail"
@@ -18,7 +18,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editEmail"
+        android:id="@+id/editEmailRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvEmail"
@@ -29,14 +29,14 @@
         android:id="@+id/tvPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editEmail"
+        android:layout_below="@id/editEmailRegister"
         android:layout_marginTop="20dp"
         android:text="Password"
         android:textStyle="bold"
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/editPassword"
+        android:id="@+id/editPasswordRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvPassword"
@@ -44,24 +44,23 @@
         android:inputType="textPassword"/>
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editPassword"
+        android:layout_below="@id/editPasswordRegister"
         android:layout_marginTop="50dp"
-        android:text="Login"
+        android:text="Register"
         />
 
     <TextView
-        android:id="@+id/tvRegister"
+        android:id="@+id/tvLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btnLogin"
+        android:layout_below="@id/btnRegister"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:text="Create New Account"
+        android:text="Login with existing acoount"
         android:textColor="#000000"
         android:textSize="15sp" />
-
 
 </RelativeLayout>
