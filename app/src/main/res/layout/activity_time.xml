@@ -1,9 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".timeActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvNomor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nomor"
+        android:textColor="#030303"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/EditNomor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNomor"
+        android:layout_alignLeft="@id/tvNomor"
+        android:inputType="number"
+        android:maxLength="30" />
+
+    <TextView
+        android:id="@+id/tvEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditNomor"
+        android:layout_alignLeft="@id/EditNomor"
+        android:text="Event"
+        android:textColor="#030303"
+        android:textSize="18sp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editEvent"
+        android:layout_below="@id/tvEvent"
+        android:layout_alignLeft="@id/tvEvent"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/tvTanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editEvent"
+        android:layout_alignLeft="@id/editEvent"
+        android:text="Tanggal"
+        android:textColor="#030303"
+        android:textSize="18sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTanggal"
+        android:layout_below="@id/tvTanggal"
+        android:layout_alignLeft="@id/tvTanggal"
+        android:inputType="date"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvKeterangan"
+        android:layout_below="@id/editTanggal"
+        android:layout_alignLeft="@id/editTanggal"
+        android:text="Keterangan"
+        android:textColor="#030303"
+        android:textSize="18sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editKeterangan"
+        android:layout_below="@id/tvKeterangan"
+        android:layout_alignLeft="@id/tvKeterangan"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWaktuMulai"
+        android:layout_below="@id/editKeterangan"
+        android:layout_alignLeft="@id/editKeterangan"
+        android:text="Waktu Mulai"
+        android:textColor="#030303"
+        android:textSize="18sp"/>
+    <EditText
+        android:id="@+id/editWaktuMulai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tvWaktuMulai"
+        android:layout_below="@id/tvWaktuMulai"
+        android:inputType="none"
+        android:focusable="false"
+        android:hint="Pilih Waktu Mulai"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWaktuAkhir"
+        android:layout_below="@id/editWaktuMulai"
+        android:layout_alignLeft="@id/editWaktuMulai"
+        android:text="Waktu Akhir"
+        android:textColor="#030303"
+        android:textSize="18sp"/>
+    <EditText
+        android:id="@+id/editWaktuAkhir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tvWaktuAkhir"
+        android:layout_below="@id/tvWaktuAkhir"
+        android:inputType="none"
+        android:focusable="false"
+        android:hint="Pilih Waktu Mulai"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editWaktuAkhir"
+        android:layout_marginTop="10dp"
+        android:text="Tambahkan"
+        />
+
+    <Button
+        android:id="@+id/btnSelesai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAdd"
+        android:layout_marginTop="3dp"
+        android:text="Selesai"/>
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSelesai"
+        android:layout_marginTop="3dp"
+        android:text="Kembali"/>
+
+</RelativeLayout>
