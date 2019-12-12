@@ -16,7 +16,7 @@
         android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/EditNomor"
+        android:id="@+id/editNomor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvNomor"
@@ -28,8 +28,8 @@
         android:id="@+id/tvEvent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/EditNomor"
-        android:layout_alignLeft="@id/EditNomor"
+        android:layout_below="@id/editNomor"
+        android:layout_alignLeft="@id/editNomor"
         android:text="Event"
         android:textColor="#030303"
         android:textSize="18sp" />
@@ -57,7 +57,7 @@
         android:id="@+id/editTanggal"
         android:layout_below="@id/tvTanggal"
         android:layout_alignLeft="@id/tvTanggal"
-        android:inputType="date"
+        android:hint="Pilih Tanggal"
         />
 
     <TextView
